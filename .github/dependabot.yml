@@ -1,0 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # Hoặc "pip", "maven", "gradle", v.v.
+    directory: "/" # Thư mục chứa file quản lý dependencies (ví dụ: package.json)
+    schedule:
+      interval: "daily" # Lên lịch kiểm tra (daily, weekly, monthly)
+    commit-message:
+      prefix: "deps"
+    open-pull-requests-limit: 5
